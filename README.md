@@ -4,6 +4,8 @@
 This project showcases the development of a fully serverless web application using a combination of AWS services such as **Lambda**, **DynamoDB**, and **S3**. The application demonstrates how to implement key functionalities like Create, Read, Update, and Delete (CRUD) operations on data stored in DynamoDB, all while utilizing the power of a serverless architecture to ensure scalability, cost efficiency, and minimal infrastructure management.
 
 ### **Architecture Overview:**
+![image](https://github.com/user-attachments/assets/8781cf22-fa3d-4fde-b279-804d3b0a5616)
+
 The architecture leverages the following AWS services to build a robust, scalable, and highly available application:
 - **AWS Lambda**: To implement the serverless backend logic for handling CRUD operations on DynamoDB.
 - **Amazon DynamoDB**: A NoSQL database used for storing and managing application data.
