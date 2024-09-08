@@ -1,19 +1,24 @@
 import json
 import boto3
 dynamodb = boto3.resource('dynamodb')
-table = dynamodb.Table('serverless-web-application-on-aws')
+table = dynamodb.Table('serverless-aws-web-app')
+
 def lambda_handler(event, context):
+    # Fetch the item with ID = 0
     response = table.get_item(Key={
-        'id':'0'
-    })
-    views = response['Item']['views']
-    views = views + 1
-    
-    print(views)
-    
-    response = table.put_item(Item={
-        'id':'0',
-        'views': views
+        'ID': 0
     })
     
-    return views
+    # Increment the Views directly, assuming 'Views' exists
+    Views = response['Item']['Views'] + 1
+    
+    print(Views)
+    
+    # Update the item with incremented Views
+    table.put_item(Item={
+        'ID': 0,
+        'Views': Views
+    })
+    
+    return Views
+
