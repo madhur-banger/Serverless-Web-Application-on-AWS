@@ -1,4 +1,4 @@
-/* Basic reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f7f6;
     color: #333;
-    overflow-x: hidden;
 }
 
 header {
@@ -80,16 +79,12 @@ main {
 
 #documentation {
     margin-top: 50px;
+    padding: 20px;
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 20px;
 }
 
 ul {
@@ -109,7 +104,36 @@ footer {
     margin-top: 40px;
 }
 
+/* Animations */
+.animated-img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    animation: fadeInUp 1.5s ease;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .scroll-button {
+        font-size: 0.9rem;
+    }
 }
