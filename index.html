@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>A Monk in Cloud</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless Web Application on AWS - Documentation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Serverless Web Application - AWS</h1>
-        <div class="counter-number">Views</div>
-	</header>
-	<main>
-		<form>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name">
-			<button id="submit-btn">Submit</button>
-		</form>
-		<p id="greeting"></p>
-	</main>
-	<script src="script.js"></script>
+    <header>
+        <h1>AWS Serverless Web Application Documentation</h1>
+        <div class="counter">
+            <span class="counter-title">Views:</span>
+            <span class="counter-number" id="view-count">Loading...</span>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to the Project Documentation</h2>
+                <p>Explore the architecture and learn how we built a serverless web app using AWS Lambda, DynamoDB, and S3.</p>
+                <button class="scroll-button" onclick="scrollToSection()">Learn More</button>
+            </div>
+        </section>
+
+        <section id="documentation">
+            <h2>Project Overview</h2>
+            <p>This project demonstrates a serverless architecture using AWS services like Lambda, DynamoDB, and S3.</p>
+
+            <h2>Architecture Overview</h2>
+            <img src="architecture-diagram.png" alt="Architecture Diagram">
+            <p>The key AWS services used include Lambda for backend logic, DynamoDB for data storage, and S3 for frontend hosting.</p>
+
+            <h2>Project Workflow</h2>
+            <ul>
+                <li>Create a DynamoDB table</li>
+                <li>Develop Lambda functions for CRUD operations</li>
+                <li>Host frontend assets in S3</li>
+                <li>Set up CloudFront for content delivery</li>
+            </ul>
+
+            <h2>Expected Outcomes</h2>
+            <ul>
+                <li>Serverless app leveraging AWS services</li>
+                <li>Hands-on experience with Lambda and DynamoDB</li>
+                <li>Optimized content delivery using CloudFront</li>
+            </ul>
+
+            <h2>Key Learning Areas</h2>
+            <ul>
+                <li>Serverless architecture design</li>
+                <li>Lambda functions and API Gateway integration</li>
+                <li>NoSQL databases with DynamoDB</li>
+                <li>S3 & CloudFront for fast, secure delivery</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Serverless App on AWS Documentation</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
- 
