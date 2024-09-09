@@ -3,7 +3,7 @@ window.onload = function() {
 
   async function updateCounter() {
       try {
-          let response = await fetch("https://re6sptiewpupr6rh4q7zucy3a40qxsvr.lambda-url.us-east-1.on.aws/");
+          let response = await fetch("https://5rumd32fgnfmqfbh4ira2gycsa0ermcu.lambda-url.us-east-1.on.aws/");
           
           // Check if the response was successful
           if (!response.ok) {
